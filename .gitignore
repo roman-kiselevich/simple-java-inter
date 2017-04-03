@@ -1,0 +1,6 @@
+TODO
+*.o
+*.out
+vgcore.*
+*.test.c
+*.test
