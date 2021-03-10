@@ -1,18 +1,18 @@
 class Main {
-   static int x;
-   /* comment */
    static void run() {
-      String str1;
-      str1 = "Some text";
-      int var = 21231231;
-      double float_var = 50.12e-2;
-      Some.test();
-   } 
-} // end of Main
-
-class Some {
-   static double counter = 0;
-   static void test() {
-      ifj16.print("Best test\n");
+      int a;
+      ifj16.print("Write some number to calculate factorial: ");
+      a = ifj16.readInt();
+      int result;
+      if (a < 0) {
+         ifj16.print("Cannot calculate because input was 0");
+      } else {
+         result = 1;
+         while (a > 0) {
+            result = result * a;
+            a = a - 1;
+         }
+         ifj16.print("Result is: " + result + "\n");
+      }
    }
-}
+} // end of Main
